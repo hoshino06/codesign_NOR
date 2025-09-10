@@ -11,7 +11,7 @@ The code demonstrates the proposed **gradient-based co-design framework** that i
 - Policy iteration for controller updates, and  
 - Gradient-based updates of physical design parameters with admissibility checks for closed-loop stability.  
 
-The benchmark system is a **nonlinear load-positioning system** introduced in [Jiang et al., 2015].
+The benchmark system is a **nonlinear load-positioning system** introduced in [[Jiang et al., 2015]](https://doi.org/10.1109/TNNLS.2014.2382338).
 
 
 ## Results
@@ -25,7 +25,15 @@ The proposed co-design method (red) is compared with:
 
 As shown below, the proposed method achieves the lowest overall cost, resulting in ≈45% reduction compared to the initial controller and ≈20% reduction relative to SE-PI.
 
-![Convergence comparison](codesign_NOR/policy_iteration_comparison.png)
+<img src="codesign_NOR/policy_iteration_comparison.png" alt="Convergence comparison" width="500"/>
+
+---
+
+### Value function comparison
+The Galerkin approximation allows us to visualize the approximate value function under different design updates.  
+The proposed method improves the value function beyond SE-PI, while maintaining admissibility and closed-loop stability at each step.
+
+<img src="codesign_NOR/value_function_comparison.png" alt="Value function comparison" width="500"/>
 
 ---
 
@@ -35,13 +43,6 @@ By varying the weight parameter \(\alpha\), the proposed framework flexibly expl
 
 <img src="codesign_NOR/pareto_plot.png" alt="Pareto front" width="500"/>
 
----
-
-### Value function comparison
-The Galerkin approximation allows us to visualize the approximate value function under different design updates.  
-The proposed method improves the value function beyond SE-PI, while maintaining admissibility and closed-loop stability at each step.
-
-![Value function comparison](value_function_comparison.png)
 
 
 
