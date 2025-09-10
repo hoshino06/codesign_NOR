@@ -19,8 +19,8 @@ The benchmark system is a **nonlinear load-positioning system** introduced in [[
 This repository reproduces the numerical experiments in the paper using the nonlinear **load-positioning system** benchmark.
 
 ### Convergence of cost during iterations
-The proposed co-design method (red) is compared with:
-- **Policy iteration without co-design** (black),  
+The proposed co-design method (green) is compared with:
+- **Policy iteration without co-design** (red),  
 - **System-Equivalence-based Policy Iteration (SE-PI)** [Jiang et al., 2015] (blue).
 
 As shown below, the proposed method achieves the lowest overall cost, resulting in ≈45% reduction compared to the initial controller and ≈20% reduction relative to SE-PI.
