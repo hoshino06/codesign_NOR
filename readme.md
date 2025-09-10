@@ -3,7 +3,7 @@
 This repository provides the MATLAB implementation and numerical examples for the paper:
 
 > H. Hoshino,  
-> *Gradient-based Co-Design of Nonlinear Optimal Regulators with Stability Guarantee*,  
+> "*Gradient-based Co-Design of Nonlinear Optimal Regulators with Stability Guarantee*",  
 > arXiv [[preprint]](link-to-pdf)
 
 The code demonstrates the proposed **gradient-based co-design framework** that integrates:
@@ -25,7 +25,7 @@ The proposed co-design method (red) is compared with:
 
 As shown below, the proposed method achieves the lowest overall cost, resulting in ≈45% reduction compared to the initial controller and ≈20% reduction relative to SE-PI.
 
-![Convergence comparison](policy_iteration_comparison.png)
+![Convergence comparison](codesign_NOR/policy_iteration_comparison.png)
 
 ---
 
@@ -33,7 +33,7 @@ As shown below, the proposed method achieves the lowest overall cost, resulting 
 We analyze the trade-off between the **structural cost** \(J_s\) and the **control cost** \(J_c\).  
 By varying the weight parameter \(\alpha\), the proposed framework flexibly explores the Pareto front, while SE-PI is limited to improving control performance only.
 
-![Pareto front](pareto_plot.png)
+<img src="codesign_NOR/pareto_plot.png" alt="Pareto front" width="500"/>
 
 ---
 
